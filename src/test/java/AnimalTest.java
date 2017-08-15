@@ -1,5 +1,7 @@
+import models.Animal;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -15,9 +17,14 @@ public class AnimalTest {
     public void tearDown() throws Exception {
     }
 
+    @Test
+    public void instantiateNewAnimal() throws Exception {
+        Animal newAnimal = createNewAnimal();
+        assertTrue(newAnimal instanceof Animal);
+    }
 
     public Animal createNewAnimal(){
-        return new Animal("mow the lawn", 1);
+        return new Animal("Callie","female","dog","springer spaniel");
     }
 }
 

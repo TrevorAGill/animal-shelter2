@@ -1,3 +1,5 @@
+package models;
+
 /**
  * Created by Guest on 8/15/17.
  */
@@ -7,9 +9,10 @@ public class Animal {
     private String dateOfAdmittance;
     private String animalType;
     private String breed;
+    private int id;
 
 
-    public Animal(){
+    public Animal(String name, String gender, String animalType, String breed){
         this.name = name;
         this.gender = gender;
         this.animalType = animalType;
@@ -54,5 +57,13 @@ public class Animal {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

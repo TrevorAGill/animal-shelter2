@@ -1,3 +1,5 @@
+package models;
+
 /**
  * Created by Guest on 8/15/17.
  */
@@ -6,6 +8,7 @@ public class Customer {
     private String phone;
     private String animalTyoePreference;
     private String breedPreference;
+    private int id;
 
     public String getName() {
         return name;
@@ -37,5 +40,13 @@ public class Customer {
 
     public void setBreedPreference(String breedPreference) {
         this.breedPreference = breedPreference;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
